@@ -128,45 +128,25 @@ ul {
     border: 0;
 }
 
+/* main */
+.main__inner {
+   background: green;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.banner__icon {
+    width: 99px;
+}
 
 
 /* footer */
-.footer {
-    background: linear-gradient(0deg, #1E1231, #1E1231);
-}
-
 .footer__inner {
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     height: 130px;
     padding: 40px 140px 24px 140px;
     border-radius: 64px 64px 0px 0px;
     border: 4px solid #478BF9;
+    background: linear-gradient(0deg, #1E1231, #1E1231);
     border-bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -205,5 +185,13 @@ ul {
 
 .social__link {
     cursor: pointer;
-    z-index: 10;
+}
+
+.social__link svg {
+    width: 32px;
+    height: 32px;
+}
+
+use:hover {
+    fill: #8bb8ff;
 }

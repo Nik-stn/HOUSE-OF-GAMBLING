@@ -97,6 +97,11 @@ ul {
     white-space: nowrap;
 }
 
+.menu__link:hover {
+    text-decoration: underline;
+    color: #478BF9;
+}
+
 .button__header {
     display: flex;
     justify-content: center;
@@ -123,9 +128,6 @@ ul {
     border: 0;
 }
 
-.button__header>a {
-    color: #fff;
-}
 
 
 
@@ -166,4 +168,42 @@ ul {
     border-radius: 64px 64px 0px 0px;
     border: 4px solid #478BF9;
     border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pages__list {
+    display: flex;
+    gap: 40px;
+}
+
+.pages__link {
+    color: #fff;
+}
+
+.pages__link:hover {
+    text-decoration: underline;
+    color: #478BF9;
+}
+
+.social__text {
+    color: #fff;
+    text-align: right;
+    margin-bottom: 14px;
+}
+
+.social__buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.social__link>object {
+    pointer-events: auto;
+    
+}
+
+.social__link {
+    cursor: pointer;
+    z-index: 10;
 }

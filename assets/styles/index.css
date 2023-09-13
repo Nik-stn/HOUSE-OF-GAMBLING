@@ -81,7 +81,11 @@ ul {
     align-items: center;
 }
 
-.menu {
+.header-mobile__inner {
+    display: none;
+}
+
+.menu__inner {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -199,6 +203,11 @@ ul {
 
 .banner__line img {
     width: 100%;
+    max-width: 100px;
+}
+
+.banner__img-horizontal {
+    display: none;
 }
 
 .banner__line.line1 {
@@ -483,10 +492,6 @@ use:hover {
         font-size: 19px;
     }
 
-    .banner {
-        max-width: 227px;
-    }
-
     .footer__inner {
         justify-content: space-evenly;
     }
@@ -501,7 +506,7 @@ use:hover {
         gap: 32px;
     }
 
-    .menu {
+    .menu__inner {
         gap: 26px;
     }
 
@@ -598,7 +603,7 @@ use:hover {
         gap: 26px;
     }
 
-    .menu {
+    .menu__inner {
         gap: 18px;
     }
 
@@ -667,5 +672,72 @@ use:hover {
     .social__link svg {
         width: 28px;
         height: 28px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header__inner {
+        display: none;
+    }
+
+    .header-mobile__box {
+        border: 2px solid #478BF9;
+        width: 100%;
+        max-width: 768px;
+        height: 56px;
+        padding: 10px 14px;
+        border-radius: 64px;
+        margin: 0 auto;
+    }
+
+    .header-mobile__inner {
+        display: block;
+    }
+
+    .main__inner {
+        flex-direction: column;
+        max-height: 900px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner__line {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__line img {
+        max-width: 50px;
+    }
+
+    .banner__img-vertical{
+        display: none;
+    }
+
+    .banner__line img.banner__img-horizontal {
+        display: block;
+        max-width: unset;
+    }
+
+    @keyframes line1 {
+        from {
+            transform: translateX(10em);
+        }
+    }
+
+    @keyframes line2 {
+        from {
+            transform: translateX(-10em);
+        }
+    }
+
+    @keyframes line3 {
+        from {
+            transform: translateX(10em);
+        }
     }
 }

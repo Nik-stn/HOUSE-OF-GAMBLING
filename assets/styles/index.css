@@ -130,6 +130,10 @@ ul {
     background: transparent;
 }
 
+.button__item.ru {
+    display: none;
+}
+
 .button__item.second {
     width: 87px;
 }
@@ -680,6 +684,10 @@ use:hover {
 }
 
 @media (max-width: 768px) {
+    .background__dot-light {
+        background: center top url(../images/Dot_Light-mob.svg) no-repeat, url(../images/Dot_Light-mob2.svg) right bottom no-repeat;
+    }
+
     .header {
         margin-bottom: 70px;
     }

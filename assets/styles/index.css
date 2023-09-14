@@ -103,6 +103,10 @@ ul {
     color: #478BF9;
 }
 
+.menu__overlay {
+    display: none;
+}
+
 .buttons__header {
     display: flex;
     justify-content: flex-end;
@@ -676,6 +680,10 @@ use:hover {
 }
 
 @media (max-width: 768px) {
+    .header {
+        margin-bottom: 70px;
+    }
+
     .header__inner {
         display: none;
     }
@@ -769,11 +777,36 @@ use:hover {
 
     .main__inner {
         flex-direction: column;
-        max-height: 900px;
+        max-height: 1024px;
+    }
+
+    .gambling {
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .gambling__title {
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .gambling__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .gambling__button {
+        max-width: 300px;
+        height: 53px;
+        margin: 0 auto;
+        font-size: 18px;
     }
 
     .banner {
         flex-direction: column-reverse;
+        gap: 8px;
+        margin-bottom: 33px;
     }
 
     .banner__line {
@@ -811,5 +844,64 @@ use:hover {
         from {
             transform: translateX(10em);
         }
+    }
+
+    .blog {
+        max-width: 300px;
+        margin-bottom: 119px;
+    }
+
+    .blog__title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+   
+    .blog__item {
+        width: 274px;
+        height: 132px;
+        padding: 15px 35px;
+        border-radius: 40px;
+    }
+
+    .blog__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 6px;
+    }
+
+    .blog__date {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .blog__box::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .blog__box::-webkit-scrollbar-thumb {
+        border: 3px solid #333;
+    }
+
+    .footer__inner {
+        height: 233px;
+        padding: 20px;
+        border-radius: 50px 50px 0px 0px;
+        border: 2px solid #478BF9;
+        border-bottom: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pages {
+        margin-bottom: 20px;
+    }
+
+    .pages__list {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .social__text {
+        text-align: left;
     }
 }

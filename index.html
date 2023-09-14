@@ -25,30 +25,17 @@
                         </ul>
                     </nav>
                     <div class="buttons__header">
-                        <a class="button__item lang" href="#"><img src="assets/images/Icon_Planet.png" alt="Icon_Planet">EN</a>
+                        <a class="button__item lang" href="#"><img src="assets/images/lang.png" alt="lang">EN</a>
                         <a class="button__item second" href="#">LOG IN</a>
                         <a class="button__item blue" href="#">SIGN UP</a>
                     </div>
                 </div>
                 <div class="header-mobile__inner">
                     <div class="header-mobile__box">
-                        <a class="mobile-button__lang" href="#"><img src="assets/images/Icon_Planet.png" alt="Icon_Planet">EN</a>
-                        <button class="button__mobile">Button</button>
+                        <a class="mobile-button__lang" href="#"><img src="assets/images/mobile_lang.png" alt="mobile_lang"></a>
+                        <button class="button-menu__mobile" onclick="openOverlayMenu()"><img src="assets/images/Menu.png" alt=""></button>
                     </div>
-                    <div class="overlay">
-                        <nav class="menu__mobile">
-                            <ul class="menu__mobile-inner">
-                                <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">About us</a></li>
-                                <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Brands</a></li>
-                                <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Commissions</a></li>
-                                <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">News</a></li>
-                                <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Contact us</a></li>
-                                <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Careers</a></li>
-                            </ul>
-                        </nav>
-                        <a class="mobile-button__second" href="#">LOG IN</a>
-                        <a class="mobile-button__blue" href="#">SIGN UP</a>
-                    </div>
+                   
                 </div>
             </div>
         </header>
@@ -178,6 +165,24 @@
                 </div>
             </div>
         </footer>
+        <div class="menu__overlay">
+            <div class="overlay__box">
+                <a class="mobile-button__lang" href="#"><img src="assets/images/mobile_lang.png" alt="mobile_lang"></a>
+                <button class="button-menu__mobile" onclick="closeOverlayMenu()"><img src="assets/images/Menu_cross.png" alt=""></button>
+            </div>
+            <nav class="menu__mobile">
+                <ul class="menu__mobile-inner">
+                    <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">About us</a></li>
+                    <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Brands</a></li>
+                    <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Commissions</a></li>
+                    <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">News</a></li>
+                    <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Contact us</a></li>
+                    <li class="menu__mobile-item"><a href="#" class="menu__mobile-link">Careers</a></li>
+                </ul>
+            </nav>
+            <a class="mobile-button__second" href="#">LOG IN</a>
+            <a class="mobile-button__blue" href="#">SIGN UP</a>
+        </div>
     </div>
     <script src="assets/scripts/index.js"></script>
 </body>

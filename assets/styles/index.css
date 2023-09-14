@@ -59,7 +59,7 @@ ul {
 
 /* header */
 .header {
-    padding-top: 16px;
+    margin: 16px 10px 0;
 }
 
 .header__inner {
@@ -91,7 +91,6 @@ ul {
     align-items: center;
     gap: 32px;
 }
-
 
 .menu__link {
     color: #fff;
@@ -573,12 +572,12 @@ use:hover {
     .blog__box::-webkit-scrollbar {
         width: 24px;
     }
-    
+
     .blog__box::-webkit-scrollbar-track {
         background: #333;
         margin: 60px 0;
     }
-    
+
     .blog__box::-webkit-scrollbar-thumb {
         border: 8px solid #333;
     }
@@ -681,7 +680,22 @@ use:hover {
         display: none;
     }
 
-    .header-mobile__box {
+    .menu__overlay {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        position: fixed;
+        top: -100vh;
+        height: 100vh;
+        z-index: 10;
+        padding: 16px 10px 0;
+        background: linear-gradient(0deg, #110A1D, #110A1D);
+        transition: .3s;
+    }
+    
+    .header-mobile__box, .overlay__box {
         border: 2px solid #478BF9;
         width: 100%;
         max-width: 768px;
@@ -689,10 +703,68 @@ use:hover {
         padding: 10px 14px;
         border-radius: 64px;
         margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4px;
+    }
+    
+    .overlay__box {
+        margin-bottom: 25px;
+    }
+
+    .button-menu__mobile {
+        background: linear-gradient(0deg, #110A1D, #110A1D);
+        border: 0;
+        cursor: pointer;
     }
 
     .header-mobile__inner {
         display: block;
+    }
+
+    .menu__mobile {
+        margin-bottom: 25px;
+    }
+
+    .menu__mobile-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+
+    .menu__mobile-item {
+        width: 300px;
+        height: 50px;
+        padding: 13px 20px;
+        border-radius: 28px;
+        border: 2px solid #478BF9;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu__mobile-link {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .mobile-button__second, .mobile-button__blue {
+        width: 300px;
+        height: 46px;
+        padding: 13px 20px;
+        border-radius: 24px;
+        border: 2px solid #9DADF2;
+        background: #1E1231;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .mobile-button__blue {
+        border: 0;
+        background: #478BF9;
     }
 
     .main__inner {
@@ -714,7 +786,7 @@ use:hover {
         max-width: 50px;
     }
 
-    .banner__img-vertical{
+    .banner__img-vertical {
         display: none;
     }
 

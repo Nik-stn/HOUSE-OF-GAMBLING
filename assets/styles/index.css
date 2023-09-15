@@ -319,18 +319,18 @@ ul {
     background: #478BF9;
 }
 
-.blog__text {
+.article__title {
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 14px;
 }
 
-.blog__text a {
+.article__title a {
     color: #fff;
 }
 
-.blog__date {
+.article__date {
     color: #FFFFFF99;
     font-size: 14px;
     font-weight: 400;
@@ -463,11 +463,11 @@ use:hover {
         padding: 11px 43px;
     }
 
-    .blog__text {
+    .article__title {
         font-size: 19px;
     }
 
-    .blog__date {
+    .article__date {
         font-size: 11px;
     }
 
@@ -567,13 +567,13 @@ use:hover {
         padding: 9px 34px;
     }
 
-    .blog__text {
+    .article__title {
         font-size: 15px;
         line-height: 22px;
         margin-bottom: 10px;
     }
 
-    .blog__date {
+    .article__date {
         font-size: 10px;
     }
 
@@ -871,13 +871,13 @@ use:hover {
         border-radius: 40px;
     }
 
-    .blog__text {
+    .article__title {
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 6px;
     }
 
-    .blog__date {
+    .article__date {
         font-size: 14px;
         line-height: 16px;
     }

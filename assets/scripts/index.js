@@ -1,6 +1,6 @@
 //Mobile menu
 function openOverlayMenu() {
-    document.querySelector(".menu__overlay").style.top = "0px";
+  document.querySelector(".menu__overlay").style.top = "0px";
 }
 
 function closeOverlayMenu() {
@@ -8,13 +8,13 @@ function closeOverlayMenu() {
 }
 
 //Scroll to last article 
-document.querySelector('.blog__text a').addEventListener('click', event => {
+function scrolling(event) {
   event.preventDefault();
   document.getElementById('target').scrollIntoView({
     behavior: "smooth",
     block: 'nearest'
   });
-})
+}
 
 //Lang
 function changeLangRu() {

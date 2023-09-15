@@ -7,6 +7,15 @@ function closeOverlayMenu() {
   document.querySelector(".menu__overlay").style.top = "-100vh";
 }
 
+//Scroll to last article 
+document.querySelector('.blog__text a').addEventListener('click', event => {
+  event.preventDefault();
+  document.getElementById('target').scrollIntoView({
+    behavior: "smooth",
+    block: 'nearest'
+  });
+})
+
 //Lang
 function changeLangRu() {
   document.querySelector('.button__item.eng').style.display = 'none';

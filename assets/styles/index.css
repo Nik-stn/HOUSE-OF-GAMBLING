@@ -275,7 +275,7 @@ ul {
     margin-bottom: 25px;
 }
 
-.blog__box {
+.article__box {
     height: 595px;
     border-radius: 100px;
     background-color: #333;
@@ -290,16 +290,16 @@ ul {
     scrollbar-color: #478BF9 #333;
 }
 
-.blog__box::-webkit-scrollbar {
+.article__box::-webkit-scrollbar {
     width: 30px;
 }
 
-.blog__box::-webkit-scrollbar-track {
+.article__box::-webkit-scrollbar-track {
     background: #333;
     margin: 90px 0;
 }
 
-.blog__box::-webkit-scrollbar-thumb {
+.article__box::-webkit-scrollbar-thumb {
     border: 10px solid #333;
     background-clip: padding-box;
     background: #478BF9;
@@ -453,7 +453,7 @@ use:hover {
         font-size: 32px;
     }
 
-    .blog__box {
+    .article__box {
         height: 476px;
         border-radius: 80px;
     }
@@ -555,7 +555,7 @@ use:hover {
         margin-bottom: 20px;
     }
 
-    .blog__box {
+    .article__box {
         height: 381px;
         border-radius: 64px;
     }
@@ -577,16 +577,16 @@ use:hover {
         font-size: 10px;
     }
 
-    .blog__box::-webkit-scrollbar {
+    .article__box::-webkit-scrollbar {
         width: 24px;
     }
 
-    .blog__box::-webkit-scrollbar-track {
+    .article__box::-webkit-scrollbar-track {
         background: #333;
         margin: 60px 0;
     }
 
-    .blog__box::-webkit-scrollbar-thumb {
+    .article__box::-webkit-scrollbar-thumb {
         border: 8px solid #333;
     }
 
@@ -882,11 +882,11 @@ use:hover {
         line-height: 16px;
     }
 
-    .blog__box::-webkit-scrollbar {
+    .article__box::-webkit-scrollbar {
         width: 10px;
     }
 
-    .blog__box::-webkit-scrollbar-thumb {
+    .article__box::-webkit-scrollbar-thumb {
         border: 3px solid #333;
     }
 
